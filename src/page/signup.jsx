@@ -1,6 +1,6 @@
 import { useState } from "react"; 
 
-export default function SignUp() {
+export default function SignUp({onSignUp}) {
 
     const[fullName, setFullName] = useState("");
     const[email, setEmail] = useState("");
@@ -34,11 +34,17 @@ export default function SignUp() {
         setError("");
         alert("SignUp Successful!!");
         console.log({ fullName, email, password });
+
+        if (onSignUp) {
+          const data = { fullName, email, password };
+          
+          onSignUp(data);
+    }
     
     }
 
     return (
-    <div className="flex items-center  justify-center min-h-screen bg-gray-200">
+    <div className="flex items-center rounded-2xl justify-center min-h-screen  bg-gradient-to-b from-blue-300 to-blue-500">
       <form
         onSubmit={handleSubmit}
         className="bg-white shadow-xl/30 p-6 rounded-2xl  w-full max-w-sm"
