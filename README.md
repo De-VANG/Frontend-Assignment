@@ -1,6 +1,7 @@
 # 🚀 Frontend Assignment
 
-This project is a **React (Vite) application** built for the given frontend tasks:
+This project is an **assignment for the Software Development Internship given by Simpler Technologies**, built using **React (Vite)** for the given frontend tasks:
+
 
 ✅ **Task 1:** Sign-Up Page with validation  
 ✅ **Task 2:** Responsive Navigation Bar  
